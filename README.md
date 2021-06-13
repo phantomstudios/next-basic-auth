@@ -30,15 +30,9 @@ import Document, {
   NextScript,
 } from "next/document";
 
-const authConfig = {
-  name: "john",
-  pass: "letmein",
-  message: "Go away!",
-};
-
 export default class MyDocument extends Document {
   static async getInitialProps(ctx: DocumentContext) {
-    await basicAuth(ctx, authConfig);
+    await basicAuth(ctx);
   }
 
   render() {
@@ -55,19 +49,20 @@ export default class MyDocument extends Document {
 }
 ```
 
+> Note: You need to specify the environment variable `BASIC_AUTH_CREDENTIALS` to pass in the required username and password. Use the format `username:password`. Using an environment variable for this is forced to enforce security.
+
 ## basicAuth Arguments
 
 - `ctx` : Required - The `DocumentContext` provided by `getInitialProps`.
-- `config` : Optional - `BasicAuthMiddlewareConfig` object which allows you to change the default configuration.
+- `config` : Optional - `BasicAuthConfig` object which allows you to granularly change the default configuration.
 
 ## Configuration
 
 You can override the configuration using these options...
 
-- `name` : The username required for login, defaults to `admin`.
-- `pass` : The password required for login, defaults to `password`.
 - `realm` : The realm used for the basic-auth, defaults to `site`.
 - `message` : The message to show upon unsuccessful login, defaults to `401 Access Denied`.
+- `credentialsEnvVar` : The environment variable containing the valid `username:password` pair, default to `BASIC_AUTH_CREDENTIALS`.
 
 [npm-image]: https://img.shields.io/npm/v/@phntms/next-basic-auth.svg?style=flat-square&logo=react
 [npm-url]: https://npmjs.org/package/@phntms/next-basic-auth

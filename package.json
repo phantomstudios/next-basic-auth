@@ -1,7 +1,7 @@
 {
   "name": "@phntms/next-basic-auth",
   "description": "Lightweight middleware to add basic-auth protection onto your Next.js site.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "homepage": "https://github.com/phantomstudios/next-basic-auth#readme",
