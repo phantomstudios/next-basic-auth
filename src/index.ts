@@ -2,23 +2,23 @@ import auth, { BasicAuthResult } from "basic-auth";
 import { DocumentContext } from "next/document";
 import compare from "tsscmp";
 
-interface MiddlewareConfig {
+export interface BasicAuthConfig {
   name: string;
   pass: string;
   realm: string;
   message: string;
 }
 
-export const baseConfig: MiddlewareConfig = {
+const baseConfig: BasicAuthConfig = {
   name: "admin",
   pass: "password",
   realm: "site",
   message: "401 Access Denied",
 };
 
-const basicAuthMiddleware = async (
+const basicAuth = async (
   { req, res }: DocumentContext,
-  config?: Partial<MiddlewareConfig>
+  config?: Partial<BasicAuthConfig>
 ) => {
   if (!req || !res || !res.end) return;
 
@@ -32,8 +32,8 @@ const basicAuthMiddleware = async (
   }
 };
 
-const check = (currentUser: BasicAuthResult, config: MiddlewareConfig) =>
+const check = (currentUser: BasicAuthResult, config: BasicAuthConfig) =>
   compare(currentUser.name, config.name) &&
   compare(currentUser.pass, config.pass);
 
-export default basicAuthMiddleware;
+export default basicAuth;

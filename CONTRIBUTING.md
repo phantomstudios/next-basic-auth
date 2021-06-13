@@ -4,23 +4,17 @@ I'm really happy that you're interested in helping out with this little project.
 
 As this is very early days for the project there's not a lot in the way of
 resources, but please check out the [documentation](./README.md), and also the
-[list of issues](https://github.com/phantomstudios/PACKAGE-NAME/issues).
+[list of issues](https://github.com/phantomstudios/next-basic-auth/issues).
 
 Please submit an issue if you need help with anything.
 
 We have a [code of conduct](./CODE_OF_CONDUCT.md) so please make sure you follow
 it.
 
-## Testing
-
-Testing is performed using `jest` and is tested on Windows, Linux and MacOS with
-Node 10 and 12 runtimes. For a PR to be considered all these environments need to
-pass. Testing is automated using GitHub Actions CI.
-
 ## Submitting changes
 
 Please send a
-[GitHub Pull Request to PACKAGE-NAME](https://github.com/phantomstudios/PACKAGE-NAME/pull/new/master)
+[GitHub Pull Request to next-basic-auth](https://github.com/phantomstudios/next-basic-auth/pull/new/master)
 with a clear list of what you've done (read more about
 [pull requests](https://help.github.com/en/articles/about-pull-requests)). When you send a pull
 request, please make sure you've covered off all the points in the template.
@@ -43,6 +37,6 @@ In effect this means:
 - Your Pull Request title and description become very important; they are the
   history of the master branch and explain all the changes.
 - You ought to be able to find any previous version easily using GitHub tabs, or
-  [Releases](https://github.com/phantomstudios/PACKAGE-NAME/releases)
+  [Releases](https://github.com/phantomstudios/next-basic-auth/releases)
 
 Thanks, John Chipps-Harding

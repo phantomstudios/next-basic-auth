@@ -1,22 +1,23 @@
 {
-  "name": "@phntms/PACKAGE-NAME",
-  "description": "Description, same as overview one-liner from README.md.",
+  "name": "@phntms/next-basic-auth",
+  "description": "Lightweight middleware to add basic-auth protection onto your Next.js site.",
   "version": "0.0.1",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
-  "homepage": "https://github.com/phantomstudios/PACKAGE-NAME#readme",
+  "homepage": "https://github.com/phantomstudios/next-basic-auth#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/phantomstudios/PACKAGE-NAME.git"
+    "url": "https://github.com/phantomstudios/next-basic-auth.git"
   },
   "bugs": {
-    "url": "https://github.com/phantomstudios/PACKAGE-NAME/issues"
+    "url": "https://github.com/phantomstudios/next-basic-auth/issues"
   },
   "keywords": [
-    "react",
-    "hooks",
-    "hook",
-    "react-hook"
+    "next.js",
+    "middleware",
+    "auth",
+    "basic-auth",
+    "protect"
   ],
   "scripts": {
     "build": "tsc",
