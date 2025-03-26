@@ -32,7 +32,7 @@
     "fix:format": "prettier \"**/*.{md,html,yaml,yml}\" --write",
     "depcheck": "npx npm-check --update"
   },
-  "author": "John Chipps-Harding (john.chipps-harding@phntms.com)",
+  "author": "Josua Pedersen (josua@phntms.com)",
   "license": "MIT",
   "peerDependencies": {
     "next": ">=10.1.3"
