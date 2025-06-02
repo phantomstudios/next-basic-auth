@@ -18,7 +18,7 @@ const baseConfig: BasicAuthConfig = {
 
 const basicAuth = async (
   { req, res }: DocumentContext,
-  config?: Partial<BasicAuthConfig>
+  config?: Partial<BasicAuthConfig>,
 ) => {
   if (!req || !res || !res.end) return;
 
