@@ -59,7 +59,6 @@
     "typescript": "^5.8.3"
   },
   "dependencies": {
-    "@phntms/next-basic-auth": "^0.0.1",
     "basic-auth": "^2.0.1",
     "tsscmp": "^1.0.6"
   }
